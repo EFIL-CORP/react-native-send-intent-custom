@@ -1,10 +1,6 @@
-# react-native-send-intent
+# react-native-send-intent-cst
 
 React Native Android module to use Android's Intent actions for send text to shareable apps or make phone calls or opening third party apps.
-
-[![npm version](http://img.shields.io/npm/v/react-native-send-intent.svg?style=flat-square)](https://npmjs.org/package/react-native-send-intent "View this project on npm")
-[![npm downloads](http://img.shields.io/npm/dm/react-native-send-intent.svg?style=flat-square)](https://npmjs.org/package/react-native-send-intent "View this project on npm")
-[![npm licence](http://img.shields.io/npm/l/react-native-send-intent.svg?style=flat-square)](https://npmjs.org/package/react-native-send-intent "View this project on npm")
 
 This module is useful when you need to share some text between apps in Android device and if you have a valid phone number make some call directly (if you ask for permission in AndroidManifest.xml).
 
@@ -13,7 +9,7 @@ E.g.: You have and short text and want to share in a SMS or Whatsapp.
 ### Installation
 
 ```bash
-npm install react-native-send-intent --save
+npm install react-native-send-intent-cst --save
 ```
 
 ### Add it to your android project
@@ -21,7 +17,7 @@ npm install react-native-send-intent --save
 - Automatically with:
 
 ```bash
-react-native link react-native-send-intent
+react-native link react-native-send-intent-cst
 ```
 
 #### Manually
@@ -31,7 +27,7 @@ react-native link react-native-send-intent
 ```gradle
 ...
 include ':RNSendIntentModule', ':app'
-project(':RNSendIntentModule').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-send-intent/android')
+project(':RNSendIntentModule').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-send-intent-cst/android')
 ```
 
 - In `android/app/build.gradle`
@@ -67,7 +63,7 @@ public class MainApplication extends Application implements ReactApplication {
 ## Example / Usage of Text (Share)
 
 ```javascript
-var SendIntentAndroid = require("react-native-send-intent");
+var SendIntentAndroid = require("react-native-send-intent-cst");
 
 SendIntentAndroid.sendText({
   title: "Please share this text",
@@ -79,7 +75,7 @@ SendIntentAndroid.sendText({
 ## Example / Usage of Send Mail (text/plain only)
 
 ```javascript
-var SendIntentAndroid = require("react-native-send-intent");
+var SendIntentAndroid = require("react-native-send-intent-cst");
 
 SendIntentAndroid.sendMail("your@address.com", "Subject test", "Test body");
 ```
@@ -89,7 +85,7 @@ SendIntentAndroid.sendMail("your@address.com", "Subject test", "Test body");
 Thanks to @pedro ;)
 
 ```javascript
-var SendIntentAndroid = require("react-native-send-intent");
+var SendIntentAndroid = require("react-native-send-intent-cst");
 
 SendIntentAndroid.sendSms("+55 48 9999-9999", "SMS body text here");
 ```
@@ -108,7 +104,7 @@ Please add this line to your AndroidManifest.xml before using this example:
 And them you can call in your JavaScript files:
 
 ```javascript
-var SendIntentAndroid = require("react-native-send-intent");
+var SendIntentAndroid = require("react-native-send-intent-cst");
 
 SendIntentAndroid.sendPhoneCall("+55 48 9999-9999", true);
 ```
@@ -119,7 +115,7 @@ For this use you doesn't need to ask any permission.
 You can add an optional second parameter, to fix the default phone app.
 
 ```javascript
-var SendIntentAndroid = require("react-native-send-intent");
+var SendIntentAndroid = require("react-native-send-intent-cst");
 
 SendIntentAndroid.sendPhoneDial("+55 48 9999-9999", false);
 ```

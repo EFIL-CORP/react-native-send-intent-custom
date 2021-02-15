@@ -1,5 +1,5 @@
 {
-  "name": "react-native-send-intent",
+  "name": "react-native-send-intent-cst",
   "version": "1.2.2",
   "description": "React Native Android module to use Android's Intent actions for send sms, text to shareable apps, open custom apps, make phone calls and etc",
   "main": "index.js",
@@ -28,8 +28,8 @@
   ],
   "author": "Lucas Ferreira <contato@lucasferreira.com>",
   "license": "MIT",
-  "repository": "https://github.com/lucasferreira/react-native-send-intent",
-  "bugs": "https://github.com/lucasferreira/react-native-send-intent/issues",
+  "repository": "https://github.com/EFIL-CORP/react-native-send-intent-custom",
+  "bugs": "https://github.com/EFIL-CORP/react-native-send-intent-custom/issues",
   "peerDependencies": {
     "react-native": "*"
   }
